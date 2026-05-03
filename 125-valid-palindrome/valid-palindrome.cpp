@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        int n =s.length();
+        int n=s.size();
         int st=0;
         int end=n-1;
         while(st<=end){
@@ -12,13 +12,13 @@ public:
                 end--;
             }
             if(tolower(s[st])!=tolower(s[end])){
-                cout<<"Not a palindome";
+                cout<<"not a palidrome";
                 return false;
             }
             st++;
             end--;
         }
-        cout<<"palindome";
+        cout<<"palindome ";
         return true;
     }
 };
